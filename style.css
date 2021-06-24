@@ -1,0 +1,243 @@
+/* presets */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title-bar {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  width: 100vw;
+  height: 4vh;
+  background-color: #188038;
+  font-size: 0.8rem;
+  outline: hidden;
+  cursor: context-menu;
+}
+
+.menu-bar {
+  width: 100vw;
+  height: 4.5vh;
+  background-color: #188038;
+  color: white;
+  cursor: context-menu;
+}
+
+.menu-bar p {
+  display: inline;
+  flex-direction: row;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 0.8rem;
+  justify-content: center;
+}
+
+
+.menu-bar p:hover {
+  background-color: rgb(98, 100, 102);
+}
+
+.menu-bar-option-selected {
+  color: rgb(98, 100, 102);
+  background-color: white;
+
+}
+
+
+.menu-option{
+    height: 8vh;
+    width: 100vw;
+    /* background-color: red; */
+}
+
+.formula-bar{
+    
+    display:flex;
+    height: 5vh;
+    width: 100vw;
+    background-color: green;
+    align-items: center;
+
+}
+
+.formula-bar input{
+    height: 90%;
+    outline: none;
+    
+}
+
+#row{
+    margin-left: 5px;
+}
+
+#formula{
+    width: 90%;
+}
+
+.grid{
+    overflow: auto;
+    position: relative;
+    height: 72.5vh;
+    width: 100%;
+}
+
+.sheets-bar{
+    height: 6vh;
+    width: 100%;
+    /* background-color: yellow; */
+}
+
+.sheets-bar div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    width: 15vh;
+    margin-left: 3rem;
+    background-color: #188038;
+    font-weight: 540;
+    font-size: 0.9rem;
+    color: white;
+    cursor: context-menu;
+}
+
+.menu-option{
+    display: flex;
+    align-items: center;
+}
+
+.material-icons.paste{
+    font-size: 40px;
+    margin-left: 0.5rem;
+}
+
+.cutcopy{
+    margin-left: 0.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cutcopy span{
+    font-size: 0.9rem;
+    margin: 0.1rem;
+
+}
+
+.cutcopysign p{
+    margin: auto;
+    font-size: 0.9rem;
+}
+
+.copycutpaste{
+    display: flex;
+    align-items: center;
+}
+
+.menu-option{
+    cursor: context-menu;
+}
+
+.font-styles{
+    margin-left: 1rem;
+}
+
+#cell-font-family{
+    margin-bottom: 0.5rem;
+    height: 1.1rem;
+    width: 6.5rem;
+}
+
+.bui{
+    margin-left: 0.5rem;
+}
+
+.alignment{
+    margin-left: 0.5rem;
+}
+
+.colors{
+    margin-left: 2rem;
+}
+
+.blank-corner{
+    height: 1rem;
+    width: 2.5rem;
+    /* background-color: rgb(225, 234, 240); */
+    position: fixed;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.column-tags{
+    position: absolute;
+    display: flex;
+    top:0;
+    left: 2.5rem;
+}
+
+.column-tag-cell{
+    display: flex;
+    height: 1rem;
+    width: 2.5rem;
+    border: 1px solid;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+.row-tag-cell{
+    display: flex;
+    height: 1rem;
+    width: 2.5rem;
+    border: 1px solid;
+    text-align: center;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+
+
+
+.row-numbers {
+    position: absolute;
+    margin-top: 1rem;
+
+  }
+  
+  .row {
+    display: flex;
+
+  }
+  
+  .cell {
+    width: 2.5rem;
+    height: 1rem;
+    background-color: white;
+    border: 1px solid #079992;
+    flex-shrink: 0;
+    outline: none;
+    overflow: hidden;
+    font-size: 0.7rem;
+  }
+
+  .mycells{
+      position: relative;
+      top: 1rem;
+      left: 2.5rem;
+  }
+
+
+
+
+
+  🔥🔥
