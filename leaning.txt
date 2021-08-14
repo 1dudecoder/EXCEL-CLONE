@@ -1,0 +1,56 @@
+-------------------------------------------------------------------
+ 		C = A + B
+
+[A] downsteam - jo cell depend hai humpe [C]
+[C] upstream - jis cell pr hum depend hai [A, B]
+
+-------------------------------------------------------------------
+	A1 
+- FORMULA 
+- VALUE 
+- DOWNSTREAMS -[C]
+- UPSTREAMS - []
+
+	C1
+- DOWNSTREAM - []
+- UPSTREAM -[A,B]
+
+-------------------------------------------------------------------
+WHEN WE DIRECT INPUT making formula
+
+1. d1 - di  -----> direct change krdo jese input mai dete hai 50 ko 30  kr diya ye direct input to direct input hai 
+
+2. f - f    -----> formula to formula phele kisi cell pr formula se input tha ab us formula ko hta k koi or formula lga diya
+
+3. di - f   -----> direact input tha mene usse hta k formula se input le liya means koi formula lgaya us cell pr or ab usse edit krne ki jarurt nhi hai
+
+4. f - di  ----->  koi formula tha usse hta k ab direct input kr diya data cell mai
+
+-------------------------------------------------------------------
+Let c	heck how these 4keys are working together when we input any four method talk avobe check this.
+
+let name this 4 values as a 4keys
+- FORMULA 
+- VALUE 
+- DOWNSTREAMS -[C]
+- UPSTREAMS - []
+-------------------------------------------------------------------
+1 - when we get direact grid input   //direct user ne input diya box m
+-update value
+-if formula hai -- remove it
+
+//function
+-upstream k elements se bolo mujhe apne downstream se hta de
+-downsteam k elements ko bolo apni value update krlo
+-------------------------------------------------------------------
+2- when we get input from formula bar //agr us box m click kr k formula bar se input diya to ex a + b
+
+//function
+- value- formula ko evaluate kro update means alg alg ko or operation cheak kro or update krdo values
+- formula - change
+
+//function
+- upstream - unki downsteam se hatoge or wo bhi value purani wali thi use chnge kr k nyi value dalogye jo ki formula se nikal kr bni hai new
+-downsteam - khud ko krlo update
+-------------------------------------------------------------------
+
